@@ -1,0 +1,24 @@
+{
+  "name": "link-extractor",
+  "version": "1.0.0",
+  "description": "- Extract link from string and open in new tab.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JethaLal420/Link-Extractor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JethaLal420/Link-Extractor/issues"
+  },
+  "homepage": "https://github.com/JethaLal420/Link-Extractor#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
