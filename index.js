@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
    res.sendFile('./link_extractor.html', {root: __dirname})
 })
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
    console.log('Server Running on 8080')
 })
