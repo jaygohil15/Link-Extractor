@@ -2,4 +2,4 @@
 
 ### Use Case:
 
-- Extract link from string and open in new tab.
+- Extract URLs from string and open in new tab.
