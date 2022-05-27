@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Link Extractor</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Extractor</title>
 
-   <!-- Style Sheets-->
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <!-- End-->
+  <!-- Style Sheets-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- End-->
 
-   <script type = "text/javascript" src="./link_extractor.js" ></script>
 </head>
-<body>
-   <form onsubmit="openLinks(event)">
-  <div class="form-group">
-    <label for="pastedText">Text</label>
-    <input type="text" class="form-control" id="pastedText" placeholder="Enter text">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <button type="reset" class="btn btn-primary">Reset</button>
-</form>
 
+<body>
+  <script type="text/javascript" src="./link_extractor.js"></script>
+  <form onsubmit="openLinks(event)">
+    <div class="form-group">
+      <label for="pastedText">Text</label>
+      <input type="text" class="form-control" id="pastedText" placeholder="Enter text">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+    <button type="button" class="btn btn-primary" onclick="open10Link()">Open 10 Link</button>
+  </form>
+  <div class="other">
+    <div style="display: none;" id="counter">0</div>
+
+    <p id="warn"></p>
+  </div>
 </body>
+
 </html>
